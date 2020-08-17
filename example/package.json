@@ -1,17 +1,17 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
-  "license": "MIT",
+  "license": "0BSD",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "start": "gatsby develop"
   },
   "dependencies": {
-    "gatsby": "^2.24.41",
-    "gatsby-theme-minimal": "^1.0.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "2.24.47",
+    "gatsby-theme-headlight": "1.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }

@@ -1,14 +1,15 @@
 {
-  "name": "gatsby-starter-theme-workspace",
+  "name": "@weareheadlight/gatsby",
   "private": true,
-  "version": "0.0.1",
-  "main": "index.js",
-  "license": "0BSD",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "gatsby-theme-minimal",
+    "gatsby-theme-headlight",
     "example"
-  ]
+  ],
+  "repository": "git@github.com:WeAreHeadlight/gatsby-headlight.git",
+  "author": "Jacob Friis Saxberg <jacob@weareheadlight.com>"
 }

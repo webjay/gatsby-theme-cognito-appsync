@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-theme-headlight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "gatsby": "2.24.47"
+  },
+  "repository": "git@github.com:WeAreHeadlight/gatsby-headlight.git",
+  "author": "Jacob Friis Saxberg <jacob@weareheadlight.com>",
+  "private": true,
+  "dependencies": {
+    "@sentry/gatsby": "5.21.1",
+    "aws-amplify": "3.0.23",
+    "aws-amplify-react": "4.1.22",
+    "aws-appsync": "4.0.0",
+    "gatsby-plugin-appsync": "1.0.9",
+    "gatsby-plugin-graphql-loader": "1.0.2",
+    "prop-types": "15.7.2"
+  }
+}
