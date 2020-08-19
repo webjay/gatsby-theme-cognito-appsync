@@ -1,0 +1,1 @@
+# gatsby-theme-cognito-appsync

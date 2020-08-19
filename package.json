@@ -7,9 +7,10 @@
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "gatsby-theme-headlight",
+    "gatsby-theme-cognito-appsync",
     "example"
   ],
   "repository": "git@github.com:WeAreHeadlight/gatsby-headlight.git",
-  "author": "Jacob Friis Saxberg <jacob@weareheadlight.com>"
+  "author": "Jacob Friis Saxberg <jacob@weareheadlight.com>",
+  "description": "Headlight using GatsbyJS"
 }

@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "gatsby": "2.24.47",
-    "gatsby-theme-headlight": "1.0.0",
+    "gatsby-theme-cognito-appsync": "1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }
