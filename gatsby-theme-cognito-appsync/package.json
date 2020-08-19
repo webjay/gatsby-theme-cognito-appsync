@@ -1,5 +1,6 @@
 {
   "name": "gatsby-theme-cognito-appsync",
+  "keywords": ["gatsby", "aws", "cognito", "appsync"],
   "version": "1.0.1",
   "main": "index.js",
   "license": "0BSD",
