@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-cognito-appsync",
+  "name": "@weareheadlight/gatsby-headlight",
   "keywords": ["gatsby", "aws", "cognito", "appsync"],
   "version": "1.0.1",
   "main": "index.js",
