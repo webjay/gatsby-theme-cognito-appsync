@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { ApolloProvider } from 'react-apollo';
+import { ApolloProvider } from 'react-apollo';
+import { client } from "gatsby-plugin-appsync";
 import { Authenticator, Greetings } from 'aws-amplify-react';
-// import client from '../config';
 
 function Auth({ children }) {
   const [signedIn, setSignedIn] = useState(false);
@@ -11,9 +11,9 @@ function Auth({ children }) {
   }
   return (
     <Authenticator hide={[Greetings]} onStateChange={onStateChange}>
-      {/* <ApolloProvider client={client}> */}
+      <ApolloProvider client={client}>
         {signedIn === true && children}
-      {/* </ApolloProvider> */}
+      </ApolloProvider>
     </Authenticator>
   );
 }
