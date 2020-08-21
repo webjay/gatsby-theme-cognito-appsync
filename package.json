@@ -6,13 +6,9 @@
     "cognito",
     "appsync"
   ],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "license": "0BSD",
-  "engines": {
-    "node": "12",
-    "yarn": "2"
-  },
   "peerDependencies": {
     "gatsby": "2.x.x"
   },
