@@ -1,4 +1,4 @@
-// import { client } from 'gatsby-plugin-appsync';
+import { client } from 'gatsby-plugin-appsync';
 import { Auth } from 'aws-amplify';
 
 function signout() {
@@ -6,6 +6,6 @@ function signout() {
 }
 
 export {
-  // client,
+  client,
   signout,
 };
