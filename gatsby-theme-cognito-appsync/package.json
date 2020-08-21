@@ -1,5 +1,5 @@
 {
-  "name": "@weareheadlight/gatsby-headlight",
+  "name": "@webjay/gatsby-theme-cognito-appsync",
   "keywords": ["gatsby", "aws", "cognito", "appsync"],
   "version": "1.0.1",
   "main": "index.js",
@@ -7,8 +7,8 @@
   "peerDependencies": {
     "gatsby": "2.x.x"
   },
-  "repository": "git@github.com:WeAreHeadlight/gatsby-headlight.git",
-  "author": "Jacob Friis Saxberg <jacob@weareheadlight.com>",
+  "repository": "git@github.com:webjay/gatsby-theme-cognito-appsync.git",
+  "author": "@webjay",
   "private": false,
   "dependencies": {
     "aws-amplify": "3.0.23",
