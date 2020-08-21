@@ -1,7 +1,7 @@
 {
-  "name": "@webjay/gatsby-theme-cognito-appsync",
+  "name": "gatsby-theme-cognito-appsync",
   "keywords": ["gatsby", "aws", "cognito", "appsync"],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "0BSD",
   "peerDependencies": {
@@ -23,8 +23,5 @@
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-react": "7.20.6",
     "gatsby-plugin-eslint": "2.0.8"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
