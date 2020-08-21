@@ -1,7 +1,7 @@
 {
   "name": "@webjay/gatsby-theme-cognito-appsync",
   "keywords": ["gatsby", "aws", "cognito", "appsync"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "0BSD",
   "peerDependencies": {
