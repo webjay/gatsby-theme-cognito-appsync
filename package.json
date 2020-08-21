@@ -9,6 +9,10 @@
   "version": "1.0.3",
   "main": "index.js",
   "license": "0BSD",
+  "engines": {
+    "node": "12",
+    "yarn": "2"
+  },
   "peerDependencies": {
     "gatsby": "2.x.x"
   },
