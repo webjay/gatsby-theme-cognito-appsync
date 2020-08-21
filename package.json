@@ -1,6 +1,11 @@
 {
   "name": "gatsby-theme-cognito-appsync",
-  "keywords": ["gatsby", "aws", "cognito", "appsync"],
+  "keywords": [
+    "gatsby",
+    "aws",
+    "cognito",
+    "appsync"
+  ],
   "version": "1.0.3",
   "main": "index.js",
   "license": "0BSD",
@@ -9,7 +14,6 @@
   },
   "repository": "git@github.com:webjay/gatsby-theme-cognito-appsync.git",
   "author": "@webjay",
-  "private": false,
   "dependencies": {
     "aws-amplify": "3.0.23",
     "aws-amplify-react": "4.1.22",
