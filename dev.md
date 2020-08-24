@@ -2,4 +2,4 @@
 
 ## Packaging
 
-    yarn publish
+    yarn shipit

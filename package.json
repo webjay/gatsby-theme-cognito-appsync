@@ -15,7 +15,7 @@
   },
   "author": "@webjay",
   "scripts": {
-    "bump": "yarn version --patch"
+    "shipit": "yarn publish --patch"
   },
   "peerDependencies": {
     "gatsby": "2.x.x"
