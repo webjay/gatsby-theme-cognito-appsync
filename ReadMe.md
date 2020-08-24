@@ -39,3 +39,7 @@ In `gatsby-browser.js`:
     };
 
     export { wrapRootElement };
+
+For `useQuery`:
+
+    import { client } from 'gatsby-theme-cognito-appsync';
