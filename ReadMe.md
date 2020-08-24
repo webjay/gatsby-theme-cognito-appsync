@@ -14,7 +14,6 @@ In `.env.development`:
     GATSBY_COGNITO_DOMAIN=???.auth.???.amazoncognito.com
     GATSBY_URL=http://localhost:8000/
     GATSBY_GRAPHQL_ENDPOINT=https://???.appsync-api.???.amazonaws.com/graphql
-    GATSBY_AUTH_TYPE=AMAZON_COGNITO_USER_POOLS
 
 In `gatsby-config.js`:
 
