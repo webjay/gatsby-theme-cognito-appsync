@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { ApolloProvider } from 'react-apollo';
-import { client } from "gatsby-plugin-appsync";
-import { Authenticator, Greetings } from 'aws-amplify-react';
+import { AmplifyAuthenticator } from '@aws-amplify/ui-react'
+import '../config';
 
-function Auth({ children }) {
-  const [signedIn, setSignedIn] = useState(false);
-  function onStateChange(authState) {
-    setSignedIn(authState === 'signedIn');
-  }
+function AuthWrap({ children }) {
   return (
-    <Authenticator hide={[Greetings]} onStateChange={onStateChange}>
-      <ApolloProvider client={client}>
-        {signedIn === true && children}
-      </ApolloProvider>
-    </Authenticator>
+    <AmplifyAuthenticator>
+      {children}
+    </AmplifyAuthenticator>
   );
 }
 
-Auth.propTypes = {
+AuthWrap.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Auth;
+export default AuthWrap;
