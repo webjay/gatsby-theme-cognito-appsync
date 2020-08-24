@@ -9,7 +9,10 @@
   "version": "1.0.6",
   "main": "index.js",
   "license": "0BSD",
-  "repository": "git@github.com:webjay/gatsby-theme-cognito-appsync.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webjay/gatsby-theme-cognito-appsync"
+  },
   "author": "@webjay",
   "peerDependencies": {
     "gatsby": "2.x.x"
