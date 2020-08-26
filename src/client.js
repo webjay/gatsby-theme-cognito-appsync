@@ -1,4 +1,5 @@
-import { ApolloLink, ApolloClient, InMemoryCache } from '@apollo/client';
+import { ApolloLink, HttpLink, ApolloClient, InMemoryCache } from '@apollo/client';
+import fetch from 'isomorphic-fetch';
 import Auth from '@aws-amplify/auth';
 import { createAuthLink } from 'aws-appsync-auth-link';
 import { createSubscriptionHandshakeLink } from 'aws-appsync-subscription-link';
@@ -25,9 +26,17 @@ const config = {
   disableOffline: true,
 };
 
+function createHttpLink() {
+  return new HttpLink({
+    uri: 'http://localhost:4000/graphql',
+    fetch,
+  });
+}
+
 const link = ApolloLink.from([
   createAuthLink(config),
   createSubscriptionHandshakeLink(config),
+  createHttpLink(),
 ]);
 
 const client = new ApolloClient({
