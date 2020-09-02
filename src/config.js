@@ -1,4 +1,5 @@
 import Auth from '@aws-amplify/auth';
+import nonEmpty from './lib/non_empty';
 
 const config = {
   userPoolId: process.env.GATSBY_COGNITO_USER_POOL_ID,
@@ -12,4 +13,6 @@ const config = {
   },
 };
 
-Auth.configure(config);
+if (nonEmpty(config) === true) {
+  Auth.configure(config);
+}
