@@ -1,5 +1,5 @@
-import { ApolloLink, HttpLink, ApolloClient, InMemoryCache } from '@apollo/client';
 import fetch from 'isomorphic-fetch';
+import { ApolloLink, HttpLink, ApolloClient, InMemoryCache } from '@apollo/client';
 import Auth from '@aws-amplify/auth';
 import { createAuthLink } from 'aws-appsync-auth-link';
 import { createSubscriptionHandshakeLink } from 'aws-appsync-subscription-link';
@@ -23,7 +23,7 @@ const config = {
   // cacheOptions: {
   //   dataIdFromObject,
   // },
-  disableOffline: true,
+  // disableOffline: true,
 };
 
 function createHttpLink() {
