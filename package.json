@@ -27,18 +27,21 @@
     "@aws-amplify/interactions": "3.3.2",
     "@aws-amplify/storage": "3.3.2",
     "@aws-amplify/ui-react": "0.2.19",
+    "apollo-client": "2.6.10",
     "aws-appsync-auth-link": "2.0.3",
     "aws-appsync-subscription-link": "2.2.1",
+    "graphql": "15.3.0",
     "isomorphic-fetch": "2.2.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "regenerator-runtime": "0.13.7"
   },
   "devDependencies": {
     "@aws-sdk/util-utf8-browser": "0.1.0-preview.1",
     "@babel/core": "7.11.6",
     "babel-eslint": "10.1.0",
-    "eslint": "7.8.1",
+    "eslint": "7.9.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-react": "7.20.6"
