@@ -8,36 +8,28 @@
 
 In `.env.development`:
 
-    GATSBY_REGION=???
-    GATSBY_COGNITO_USER_POOL_ID=???
-    GATSBY_COGNITO_APP_CLIENT_ID=???
-    GATSBY_COGNITO_DOMAIN=???.auth.???.amazoncognito.com
-    GATSBY_URL=http://localhost:8000/
-    GATSBY_GRAPHQL_ENDPOINT=https://???.appsync-api.???.amazonaws.com/graphql
+    URL=http://localhost:8000/
+    AWS_REGION=???
+    AWS_COGNITO_USER_POOL_ID=???
+    AWS_COGNITO_APP_CLIENT_ID=???
+    AWS_COGNITO_DOMAIN=???.auth.???.amazoncognito.com
+    AWS_GRAPHQL_ENDPOINT=https://???.appsync-api.???.amazonaws.com/graphql
 
 In `gatsby-config.js`:
 
 Add `gatsby-theme-cognito-appsync` to `plugins`.
 
-In `gatsby-browser.js`:
-
-    import React from 'react';
-    import PropTypes from 'prop-types';
-    import { AuthWrap } from 'gatsby-theme-cognito-appsync';
-
-    function wrapRootElement({ element }) {
-      return (
-        <AuthWrap>
-          {element}
-        </AuthWrap>
-      );
-    }
-
-    wrapRootElement.propTypes = {
-      element: PropTypes.element.isRequired,
-    };
-
-    export { wrapRootElement };
+    {
+      resolve: 'gatsby-theme-cognito-appsync',
+      options: {
+        userPoolId: process.env.AWS_COGNITO_USER_POOL_ID,
+        userPoolWebClientId: process.env.AWS_COGNITO_APP_CLIENT_ID,
+        region: process.env.AWS_REGION,
+        url: process.env.URL,
+        cognito_domain: process.env.AWS_COGNITO_DOMAIN,
+        graphql_endpoint: process.env.AWS_GRAPHQL_ENDPOINT,
+      },
+    },
 
 For `useQuery`:
 
