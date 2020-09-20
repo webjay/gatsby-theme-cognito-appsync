@@ -6,7 +6,7 @@ function objValEmpty(obj, key) {
   const value = obj[key];
   const isEmpty = isnt(value);
   if (isEmpty === true) {
-    console.warn(`${key} is "${value}".`);
+    console.warn(`${key} is ${value}.`);
     return true;
   }
   if (isEmpty === false && typeof value === 'object') {
