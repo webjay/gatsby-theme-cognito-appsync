@@ -23,7 +23,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "@apollo/client": "3.2.0",
+    "@apollo/client": "3.2.1",
     "@aws-amplify/auth": "3.4.4",
     "@aws-amplify/core": "3.5.4",
     "@aws-amplify/interactions": "3.3.4",
@@ -34,7 +34,7 @@
     "aws-appsync-auth-link": "2.0.3",
     "aws-appsync-subscription-link": "2.2.1",
     "graphql": "15.3.0",
-    "isomorphic-fetch": "2.2.1",
+    "isomorphic-fetch": "3.0.0",
     "regenerator-runtime": "0.13.7"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "eslint": "7.9.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react": "7.21.0",
     "eslint-plugin-react-hooks": "4.1.2"
   }
 }
