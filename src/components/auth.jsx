@@ -22,11 +22,12 @@ function AuthWrap({ children, center }) {
 }
 
 AuthWrap.defaultProps = {
+  children: null,
   center: true,
 };
 
 AuthWrap.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   center: PropTypes.bool,
 };
 
