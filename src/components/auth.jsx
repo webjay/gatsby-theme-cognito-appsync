@@ -14,7 +14,11 @@ function AuthWrap({ children, center }) {
   const signedin = useAuth();
   if (signedin === true) return children;
   const style = center === true ? styleCenter : {};
-  return <AmplifyAuthenticator style={style} />;
+  return (
+    <div style={style}>
+      <AmplifyAuthenticator />
+    </div>
+  );
 }
 
 AuthWrap.defaultProps = {
