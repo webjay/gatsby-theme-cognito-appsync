@@ -5,8 +5,9 @@ function authConfig(pluginOptions) {
     userPoolId,
     userPoolWebClientId,
     region,
-    url,
     cognito_domain,
+    redirectSignIn,
+    redirectSignOut,
   } = pluginOptions;
   const config = {
     userPoolId,
@@ -14,8 +15,8 @@ function authConfig(pluginOptions) {
     region,
     oauth: {
       domain: cognito_domain,
-      redirectSignIn: url,
-      redirectSignOut: url,
+      redirectSignIn,
+      redirectSignOut,
       responseType: 'code',
     },
   };
