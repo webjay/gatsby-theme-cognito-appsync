@@ -1,11 +1,11 @@
 const { resolve } = require('path');
 
 function onCreateWebpackConfig({ getConfig, actions: { setWebpackConfig } }) {
-  const config = getConfig();
+  const { resolve: { alias } } = getConfig();
   setWebpackConfig({
     resolve: {
       alias: {
-        ...config.resolve.alias,
+        ...alias,
         'react': resolve('./node_modules/react'),
         'react-dom': resolve('./node_modules/react-dom'),
       },
