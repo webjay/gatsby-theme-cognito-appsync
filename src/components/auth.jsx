@@ -10,13 +10,13 @@ const styleCenter = {
   justifyContent: 'center',
 };
 
-function AuthWrap({ children, center }) {
+function AuthWrap({ children, center, usernameAlias }) {
   const signedin = useAuth();
   if (signedin === true) return children;
   const style = center === true ? styleCenter : {};
   return (
     <div style={style}>
-      <AmplifyAuthenticator />
+      <AmplifyAuthenticator usernameAlias={usernameAlias} />
     </div>
   );
 }
@@ -24,11 +24,13 @@ function AuthWrap({ children, center }) {
 AuthWrap.defaultProps = {
   children: null,
   center: true,
+  usernameAlias: undefined,
 };
 
 AuthWrap.propTypes = {
   children: PropTypes.node,
   center: PropTypes.bool,
+  usernameAlias: PropTypes.string,
 };
 
 export default AuthWrap;
