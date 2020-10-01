@@ -15,7 +15,7 @@
   },
   "author": "@webjay",
   "scripts": {
-    "updates": "ncu --dep prod,dev",
+    "ncu": "ncu --dep prod,dev",
     "shipit": "yarn publish --patch"
   },
   "peerDependencies": {
@@ -32,8 +32,8 @@
     "@aws-amplify/ui-components": "0.8.5",
     "@aws-amplify/ui-react": "0.2.22",
     "apollo-client": "2.6.10",
-    "aws-appsync-auth-link": "2.0.3",
-    "aws-appsync-subscription-link": "2.2.1",
+    "aws-appsync-auth-link": "3.0.1",
+    "aws-appsync-subscription-link": "3.0.1",
     "graphql": "15.3.0",
     "isomorphic-fetch": "3.0.0",
     "regenerator-runtime": "0.13.7"
