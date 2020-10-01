@@ -6,11 +6,12 @@ const { SignedIn } = AuthState;
 
 function useAuth() {
   const [authState, setAuthState] = useState(null);
+  function onUserInfo(username) {
+    const state = username === null ? false : SignedIn;
+    setAuthState(state);
+  }
   function authDetect() {
-    userInfo().then((username) => {
-      const state = username === null ? false : SignedIn;
-      setAuthState(state);
-    });
+    userInfo().then(onUserInfo);
     return onAuthUIStateChange(setAuthState);
   }
   useEffect(authDetect, []);
