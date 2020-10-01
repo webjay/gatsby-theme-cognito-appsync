@@ -4,8 +4,13 @@ import Auth from '@aws-amplify/auth';
 import { createAuthLink } from 'aws-appsync-auth-link';
 import { createSubscriptionHandshakeLink } from 'aws-appsync-subscription-link';
 
+function errorHandler(err) {
+  console.warn(err);
+}
+
 async function jwtToken() {
-  const session = await Auth.currentSession();
+  const session = await Auth.currentSession().catch(errorHandler);
+  if (session === undefined) return;
   return session.getIdToken().getJwtToken();
 }
 
