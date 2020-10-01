@@ -9,7 +9,8 @@ function errHandler() {
 }
 
 function userInfo() {
-  return Auth.currentUserPoolUser()
+  return Auth
+    .currentUserPoolUser({ bypassCache: true })
     .then(currentUserPoolUser)
     .catch(errHandler);
 }
