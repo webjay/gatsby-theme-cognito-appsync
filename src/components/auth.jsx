@@ -4,18 +4,19 @@ import { AmplifyAuthenticator } from '@aws-amplify/ui-react';
 import useAuth from '../hooks/auth';
 
 const styleCenter = {
-  minHeight: '100vh',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 };
 
-function AuthWrap({ children, center, usernameAlias }) {
+function AuthWrap({ children, center, usernameAlias, style }) {
   const signedin = useAuth();
+  function getStyle() {
+    return center === true ? [styleCenter, style] : style;
+  }
   if (signedin === true) return children;
-  const style = center === true ? styleCenter : {};
   return (
-    <div style={style}>
+    <div style={getStyle()}>
       <AmplifyAuthenticator usernameAlias={usernameAlias} />
     </div>
   );
@@ -25,12 +26,14 @@ AuthWrap.defaultProps = {
   children: null,
   center: true,
   usernameAlias: undefined,
+  style: {},
 };
 
 AuthWrap.propTypes = {
   children: PropTypes.node,
   center: PropTypes.bool,
   usernameAlias: PropTypes.string,
+  style: PropTypes.shape,
 };
 
 export default AuthWrap;
