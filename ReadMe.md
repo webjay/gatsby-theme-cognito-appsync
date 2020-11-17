@@ -30,6 +30,7 @@ Add `gatsby-theme-cognito-appsync` to `plugins`.
         redirectSignIn: process.env.URL_REDIRECT_SIGNIN,
         redirectSignOut: process.env.URL_REDIRECT_SIGNOUT,
         graphql_endpoint: process.env.AWS_GRAPHQL_ENDPOINT,
+        graphql_apikey: process.env.AWS_GRAPHQL_APIKEY,
       },
     },
 
