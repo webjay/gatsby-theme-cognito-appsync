@@ -1,7 +1,7 @@
 import Auth from '@aws-amplify/auth';
 
 function signout() {
-  Auth.signOut();
+  return Auth.signOut();
 }
 
 export default signout;
