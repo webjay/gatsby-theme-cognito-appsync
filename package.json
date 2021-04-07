@@ -19,33 +19,34 @@
     "shipit": "yarn publish --patch"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "gatsby": "^3.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@apollo/client": "3.2.7",
-    "@aws-amplify/auth": "3.4.11",
-    "@aws-amplify/core": "3.8.3",
-    "@aws-amplify/interactions": "3.3.11",
-    "@aws-amplify/storage": "3.3.11",
-    "@aws-amplify/ui-components": "0.9.3",
-    "@aws-amplify/ui-react": "0.2.28",
+    "@apollo/client": "3.3.14",
+    "@aws-amplify/auth": "3.4.29",
+    "@aws-amplify/core": "3.8.21",
+    "@aws-amplify/interactions": "3.3.29",
+    "@aws-amplify/storage": "3.3.29",
+    "@aws-amplify/ui-components": "1.1.1",
+    "@aws-amplify/ui-react": "1.0.6",
     "apollo-client": "2.6.10",
-    "aws-appsync-auth-link": "3.0.2",
-    "aws-appsync-subscription-link": "3.0.3",
-    "graphql": "15.4.0",
+    "aws-appsync-auth-link": "3.0.4",
+    "aws-appsync-subscription-link": "3.0.6",
+    "graphql": "15.5.0",
     "isomorphic-fetch": "3.0.0",
-    "regenerator-runtime": "0.13.7"
+    "regenerator-runtime": "0.13.7",
+    "util": "0.12.3"
   },
   "devDependencies": {
-    "@aws-sdk/util-utf8-browser": "1.0.0-rc.3",
-    "@babel/core": "7.12.3",
+    "@aws-sdk/util-utf8-browser": "3.10.0",
+    "@babel/core": "7.13.14",
     "babel-eslint": "10.1.0",
-    "eslint": "7.13.0",
+    "eslint": "7.23.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react": "7.23.1",
     "eslint-plugin-react-hooks": "4.2.0"
   }
 }
