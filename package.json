@@ -6,7 +6,7 @@
     "cognito",
     "appsync"
   ],
-  "version": "1.0.26",
+  "version": "1.0.27",
   "main": "index.js",
   "license": "0BSD",
   "repository": {
