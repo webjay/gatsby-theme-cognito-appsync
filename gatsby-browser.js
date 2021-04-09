@@ -1,20 +1,19 @@
 import Auth from '@aws-amplify/auth';
 
-function authConfig(pluginOptions) {
-  const {
-    userPoolId,
-    userPoolWebClientId,
-    region,
-    cognito_domain,
-    redirectSignIn,
-    redirectSignOut,
-  } = pluginOptions;
+function authConfig({
+  userPoolId,
+  userPoolWebClientId,
+  region,
+  cognito_domain: domain,
+  redirectSignIn,
+  redirectSignOut,
+}) {
   const config = {
     userPoolId,
     userPoolWebClientId,
     region,
     oauth: {
-      domain: cognito_domain,
+      domain,
       redirectSignIn,
       redirectSignOut,
       responseType: 'code',
