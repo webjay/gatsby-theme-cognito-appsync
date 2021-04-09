@@ -8,6 +8,7 @@ function onCreateWebpackConfig({ getConfig, actions: { setWebpackConfig } }) {
         ...alias,
         'react': resolve('./node_modules/react'),
         'react-dom': resolve('./node_modules/react-dom'),
+        '@apollo/client': resolve('./node_modules/@apollo/client'),
       },
     },
   });
