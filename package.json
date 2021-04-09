@@ -6,7 +6,7 @@
     "cognito",
     "appsync"
   ],
-  "version": "1.0.27",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "0BSD",
   "repository": {
@@ -19,34 +19,31 @@
     "shipit": "yarn publish --patch"
   },
   "peerDependencies": {
+    "@apollo/client": "^3.3.14",
     "gatsby": "^3.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@apollo/client": "3.3.14",
     "@aws-amplify/auth": "3.4.29",
     "@aws-amplify/core": "3.8.21",
     "@aws-amplify/interactions": "3.3.29",
     "@aws-amplify/storage": "3.3.29",
     "@aws-amplify/ui-components": "1.1.1",
     "@aws-amplify/ui-react": "1.0.6",
-    "apollo-client": "2.6.10",
     "aws-appsync-auth-link": "3.0.4",
     "aws-appsync-subscription-link": "3.0.6",
     "graphql": "15.5.0",
     "isomorphic-fetch": "3.0.0",
-    "regenerator-runtime": "0.13.7",
     "util": "0.12.3"
   },
   "devDependencies": {
-    "@aws-sdk/util-utf8-browser": "3.10.0",
-    "@babel/core": "7.13.14",
+    "@babel/core": "7.13.15",
     "babel-eslint": "10.1.0",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0"
   }
 }
