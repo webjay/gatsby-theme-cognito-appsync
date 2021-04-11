@@ -16,22 +16,22 @@
   "author": "@webjay",
   "scripts": {
     "ncu": "ncu --dep prod,dev",
+    "repack": "rm yarn.lock && rm -rf node_modules && yarn install",
+    "lint": "eslint . --ext .jsx,.js",
     "shipit": "yarn publish --patch"
   },
   "peerDependencies": {
     "@apollo/client": "^3.0.0",
-    "gatsby": "^3.0.0",
+    "gatsby": ">=3.0.0",
+    "graphql": "^15.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "dependencies": {
     "@aws-amplify/auth": "3.4.29",
-    "@aws-amplify/core": "3.8.21",
     "@aws-amplify/ui-components": "1.1.1",
     "aws-appsync-auth-link": "3.0.4",
-    "aws-appsync-subscription-link": "3.0.6",
-    "graphql": "15.5.0",
-    "util": "0.12.3"
+    "aws-appsync-subscription-link": "3.0.6"
   },
   "devDependencies": {
     "@babel/core": "7.13.15",

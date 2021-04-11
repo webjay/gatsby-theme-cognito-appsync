@@ -1,0 +1,27 @@
+name: ESLint
+on: push
+jobs:
+  lint:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node-version: [12]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+      - name: Install
+        env:
+          CI: true
+        run: yarn install
+      - name: Lint
+        env:
+          CI: true
+        run: yarn run lint

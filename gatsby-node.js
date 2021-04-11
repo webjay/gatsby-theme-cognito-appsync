@@ -9,6 +9,7 @@ function onCreateWebpackConfig({ getConfig, actions: { setWebpackConfig } }) {
         'react': resolve('./node_modules/react'),
         'react-dom': resolve('./node_modules/react-dom'),
         '@apollo/client': resolve('./node_modules/@apollo/client'),
+        'graphql': resolve('./node_modules/graphql'),
       },
     },
   });
