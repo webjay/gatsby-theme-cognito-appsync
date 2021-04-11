@@ -1,6 +1,7 @@
 import Auth from '@aws-amplify/auth';
 
 function authConfig({
+  identityPoolId,
   userPoolId,
   userPoolWebClientId,
   region,
@@ -9,6 +10,7 @@ function authConfig({
   redirectSignOut,
 }) {
   const config = {
+    identityPoolId,
     userPoolId,
     userPoolWebClientId,
     region,
